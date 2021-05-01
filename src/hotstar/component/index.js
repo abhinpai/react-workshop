@@ -1,3 +1,5 @@
 import Header from './Header';
-import Banner from './Banner.jsx';
-export { Header, Banner };
+import Banner from './Banner';
+import Tray from './Tray';
+import Viwers from './Viewrs';
+export { Header, Banner, Tray, Viwers };

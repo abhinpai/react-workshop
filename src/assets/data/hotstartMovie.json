@@ -1,100 +1,101 @@
 [
   {
-    "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/8292/978292-h",
-    "name": "Out of love",
-    "type": "banner",
-    "category": "Drama, Romance, Crime",
-    "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+    "Latest & Trending": [
+      {
+        "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8293/978293-v",
+        "name": "Out of Love",
+        "type": "trending",
+        "category": "Drama, Romance, Crime",
+        "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+      },
+      {
+        "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9649/959649-v",
+        "name": "The Big Bull",
+        "type": "trending",
+        "category": "Crime, Drame",
+        "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+      },
+      {
+        "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2490/942490-v",
+        "name": "Ok Computer",
+        "type": "trending",
+        "category": "Fiction, Comedy",
+        "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+      },
+      {
+        "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/231/940231-v",
+        "name": "1232 KMS",
+        "type": "trending",
+        "category": "Documentry",
+        "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+      },
+      {
+        "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6370/936370-v",
+        "name": "The falcon and the winter soldire",
+        "type": "trending",
+        "category": "Action, Sciend Fiction",
+        "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+      },
+      {
+        "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7497/907497-v",
+        "name": "Live Telecast",
+        "type": "trending",
+        "category": "Horror",
+        "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+      },
+      {
+        "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1869/911869-v",
+        "name": "Legend of Hanuman",
+        "type": "trending",
+        "category": "Mythiology",
+        "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+      },
+      {
+        "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5389/875389-v",
+        "name": "Criminal Justice",
+        "type": "tending",
+        "category": "Crime, Drama",
+        "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+      },
+      {
+        "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2915/862915-v",
+        "name": "Tripples",
+        "type": "tending",
+        "category": "Comedy, Drama, Romance",
+        "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+      }
+    ]
   },
   {
-    "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/905/840905-h",
-    "name": "Tum hai kisi ke pyar mein",
-    "type": "banner",
-    "category": "Drama, Romance",
-    "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
-  },
-  {
-    "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/9260/889260-h",
-    "name": "Yeah rishta kya kehlata hai",
-    "type": "banner",
-    "category": "Drama, Romance, Crime",
-    "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
-  },
-  {
-    "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/8017/978017-h",
-    "name": "Heighlights, PBKS Bury Sloppy RCB",
-    "type": "banner",
-    "category": "Sports",
-    "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
-  },
-  {
-    "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/8293/978293-v",
-    "name": "Out of Love",
-    "type": "trending",
-    "category": "Drama, Romance, Crime",
-    "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
-  },
-  {
-    "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/9649/959649-v",
-    "name": "The Big Bull",
-    "type": "trending",
-    "category": "Crime, Drame",
-    "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
-  },
-  {
-    "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2490/942490-v",
-    "name": "Ok Computer",
-    "type": "trending",
-    "category": "Fiction, Comedy",
-    "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
-  },
-  {
-    "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/231/940231-v",
-    "name": "1232 KMS",
-    "type": "trending",
-    "category": "Documentry",
-    "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
-  },
-  {
-    "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6370/936370-v",
-    "name": "The falcon and the winter soldire",
-    "type": "trending",
-    "category": "Action, Sciend Fiction",
-    "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
-  },
-  {
-    "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7497/907497-v",
-    "name": "Live Telecast",
-    "type": "trending",
-    "category": "Horror",
-    "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
-  },
-  {
-    "thumbnailUrl": "",
-    "name": "",
-    "type": "",
-    "category": "",
-    "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
-  },
-  {
-    "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1869/911869-v",
-    "name": "Legend of Hanuman",
-    "type": "trending",
-    "category": "Mythiology",
-    "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
-  },
-  {
-    "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/5389/875389-v",
-    "name": "Criminal Justice",
-    "type": "tending",
-    "category": "Crime, Drama",
-    "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
-  },
-  {
-    "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/2915/862915-v",
-    "name": "Tripples",
-    "type": "tending",
-    "category": "Comedy, Drama, Romance",
-    "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+    "Banner": [
+      {
+        "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/8292/978292-h",
+        "name": "Out of love",
+        "type": "banner",
+        "category": "Drama, Romance, Crime",
+        "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+      },
+      {
+        "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/905/840905-h",
+        "name": "Tum hai kisi ke pyar mein",
+        "type": "banner",
+        "category": "Drama, Romance",
+        "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+      },
+      {
+        "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/9260/889260-h",
+        "name": "Yeah rishta kya kehlata hai",
+        "type": "banner",
+        "category": "Drama, Romance, Crime",
+        "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+      },
+      {
+        "thumbnailUrl": "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/8017/978017-h",
+        "name": "Heighlights, PBKS Bury Sloppy RCB",
+        "type": "banner",
+        "category": "Sports",
+        "description": "Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator."
+      }
+    ]
   }
 ]

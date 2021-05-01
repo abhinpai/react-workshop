@@ -1,4 +1,11 @@
-.hotstart-body {
+body {
   background-color: var(--hotstar-primary-color);
+}
+
+.hotstart-body {
   height: 100%;
+
+  & .tray-container {
+    margin: 1rem 2rem;
+  }
 }

@@ -9,6 +9,8 @@
     display: flex;
     align-items: center;
     margin: 0 1rem;
+    user-select: none;
+    cursor: pointer;
   }
 
   .menu-left-items {
@@ -44,10 +46,15 @@
         outline: 0;
         border: none;
         border-bottom: 1px solid #a0a3a8;
-        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+        transition: all 900ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
         padding: 0 28px 0 0px;
         box-shadow: none;
         padding-bottom: 8px;
+
+        &:focus {
+          border-bottom: 1px solid #2080e0;
+          width: 500px;
+        }
       }
       img {
         position: absolute;
