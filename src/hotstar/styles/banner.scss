@@ -1,0 +1,59 @@
+.banner {
+  min-height: 400px;
+  &__item {
+    background-color: #030b17;
+    border-radius: 8px;
+    min-height: inherit;
+    height: 400px;
+    margin: 1rem 2rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    .content {
+      padding: 4rem;
+
+      & h2 {
+        font-weight: 600;
+        font-size: 32px;
+      }
+
+      & p {
+        font-size: 18px;
+        line-height: 1.71;
+        font-weight: 200;
+        color: rgba(255, 255, 255, 0.8);
+        margin-top: 1rem;
+      }
+    }
+
+    .gradient {
+      position: absolute;
+      width: 200px;
+      height: 400px;
+      left: 664px;
+      height: inherit;
+      -webkit-transition: background 0.3s ease-in;
+      -o-transition: background 0.3s ease-in;
+      transition: background 0.3s ease-in;
+      background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#030b17),
+        to(rgba(0, 0, 0, 0))
+      );
+      background: -webkit-linear-gradient(left, #030b17, rgba(0, 0, 0, 0));
+      background: -o-linear-gradient(left, #030b17, rgba(0, 0, 0, 0));
+      background: linear-gradient(to right, #030b17, rgba(0, 0, 0, 0));
+    }
+
+    .image {
+      height: inherit;
+
+      & img {
+        height: inherit;
+      }
+    }
+  }
+}

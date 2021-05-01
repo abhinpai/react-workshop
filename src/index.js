@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './index.scss';
+import Hotstar from './hotstar/Hotstar';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Hotstar/>
   </React.StrictMode>,
   document.getElementById('root')
 );
