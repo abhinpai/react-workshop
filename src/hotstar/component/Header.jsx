@@ -22,6 +22,7 @@ function Header() {
           className='logo'
           src='https://secure-media.hotstarext.com/web-assets/prod/images/brand-logos/disney-hotstar-logo-dark.svg'
           alt='Hotstar logo'
+          loading='lazy'
         />
 
         {MenuItems.map((item) => (
@@ -33,7 +34,7 @@ function Header() {
       <div className='menu-right-items'>
         <div className='search'>
           <input type='text' placeholder='Search' />
-          <img src={SearchIcon} alt='Search Content' />
+          <img src={SearchIcon} alt='Search Content' loading='lazy' />
         </div>
 
         <div className='subscribe-btn'> Subscribe</div>

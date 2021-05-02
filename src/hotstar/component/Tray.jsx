@@ -21,7 +21,7 @@ const Article = ({ thumbnailUrl, name, description }) => {
       onMouseEnter={() => setArticleFocused(true)}
       onMouseLeave={() => setArticleFocused(false)}
     >
-      <img src={thumbnailUrl} alt={thumbnailUrl.name} />
+      <img src={thumbnailUrl} alt={thumbnailUrl.name} loading='lazy'/>
       <div className='content' style={{ opacity: articleFocused ? 1 : 0 }}>
         <p className='title'>{name}</p>
         <span className='description'>{description}</span>

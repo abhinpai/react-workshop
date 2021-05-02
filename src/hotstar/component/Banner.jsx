@@ -22,7 +22,7 @@ function Banner() {
         </div>
         <div className='gradient'></div>
         <div className='image'>
-          <img src={Content.thumbnailUrl} alt={Content.name} />
+          <img src={Content.thumbnailUrl} alt={Content.name} loading='lazy' />
         </div>
       </div>
     </article>

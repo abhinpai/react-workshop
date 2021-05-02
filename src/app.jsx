@@ -39,7 +39,11 @@ function App() {
         {applications.map((item) => {
           return (
             <Link to={item.link} className='app-card' key={item.name}>
-              <img src={item.image ? item.image : ''} alt={item.name} />
+              <img
+                src={item.image ? item.image : ''}
+                alt={item.name}
+                loading='lazy'
+              />
               <div className='content'>
                 <span className='app-name'>{item.name}</span>
                 <span className='app-desc'>{item.description}</span>
