@@ -38,14 +38,9 @@ function Viewrs() {
   return (
     <section className='viwer-container'>
       {ViwerContent.map((item, index) => (
-        <div className='wrap'>
+        <div className='wrap' key={index}>
           <img src={item.image} alt='' />
-          <video
-            src={item.video}
-            loop={true}
-            autoPlay={true}
-            playsInline={true}
-          ></video>
+          <video src={item.video} loop autoPlay playsInline type='video/mp4' />
         </div>
       ))}
     </section>
