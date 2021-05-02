@@ -1,5 +1,13 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  font-family: var(--primary-font);
+  --hotstar-primary-color:  #0c121c;
+  --default-font-color: #fff;
+}
+
 body {
   background-color: var(--hotstar-primary-color);
+  color: var(--default-font-color);
 }
 
 .hotstart-body {

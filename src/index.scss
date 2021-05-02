@@ -3,14 +3,11 @@
 :root {
   --primary-font: 'Roboto', sans-serif;
   font-family: var(--primary-font);
-  --hotstar-primary-color:  #0c121c;
-  --default-font-color: #fff;
 }
 
 * {
   margin: 0;
   box-sizing: border-box;
-  color: var(--default-font-color);
 }
 
 html,
