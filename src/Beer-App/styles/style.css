@@ -11,7 +11,7 @@
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
-  background-color: #d4d4d4;
+  background-color: #d4d4d43b;
 }
 
 .left-header-items {
@@ -59,14 +59,36 @@
 
 .item-card {
   background-color: #d5d5d538;
-  max-width: 300px;
+  min-width: 300px;
+  max-width: 400px;
   margin: 1rem;
   border-radius: 4px;
   padding: 1rem;
 }
 
-.item-info > h1 {
+.item-info > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-info > div > h1 {
   font-weight: 300;
+  max-width: 80%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.item-info div > span {
+  font-size: 8px;
+  background-color: #ff4343;
+  color: #fff;
+  padding: 4px 6px;
+  border-radius: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
 }
 
 .item-info > p {

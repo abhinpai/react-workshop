@@ -1,23 +1,38 @@
 const baseUrl = 'https://api.punkapi.com/v2';
 
+let OriginalBeerList = [];
+let BeerNameList = [];
+let BeerList = [];
+
 async function getBeers() {
-  let result = await (await fetch(`${baseUrl}/beers`)).json();
+  OriginalBeerList = BeerList = await (await fetch(`${baseUrl}/beers`)).json();
+  constructContentContainer(OriginalBeerList, true);
+  console.log(OriginalBeerList);
+}
+
+const constructContentContainer = (list, updateName) => {
   const contentContainer = document.getElementById('content');
-  result.map((item) => {
+  contentContainer.innerHTML = '';
+  list.map((item) => {
+    updateName && BeerNameList.push(item.name);
     let div = document.createElement('div');
     div.innerHTML = contructBeerCard(
       item.name,
       item.description,
+      item.ph,
       item.food_pairing
     );
     contentContainer.appendChild(div);
   });
-}
+};
 
-function contructBeerCard(name, description, food_pairing) {
+function contructBeerCard(name, description, ph, food_pairing) {
   return `<article class="item-card">
         <div class="item-info">
-          <h1>${name}</h1>
+            <div>
+                <h1>${name}</h1>
+                <span class="ph-pill">Ph: ${ph} </span>
+            </div>
           <p>${description}</p>
         </div>
         <div class="item-sub-info">
@@ -29,29 +44,28 @@ function contructBeerCard(name, description, food_pairing) {
       </article>`;
 }
 
-function constructPill(name) {
-  return `<span class="pill">${name}</span>`;
-}
+const constructPill = (name) => `<span class="pill">${name}</span>`;
+
+const searchBeer = (e) => {
+  let searchTerm = e.value.toLowerCase();
+  if (searchTerm === '') {
+    constructContentContainer(OriginalBeerList, false);
+    return;
+  }
+  BeerList = OriginalBeerList.filter((item) =>
+    item.name.toLowerCase().includes(searchTerm)
+  );
+  constructContentContainer(BeerList, false);
+};
+
+const debounce = (fn, timeout = 300) => {
+  let timer;
+  return (...args) => {
+    if (timer) {
+      clearTimeout(timer);
+    }
+    timer = setTimeout(() => fn.apply(this, args), timeout);
+  };
+};
 
 const debouceSearch = debounce(searchBeer, 300);
-
-function searchBeer(e) {
-  console.log(e.value);
-}
-
-function debounce(fn, timeout = 300) {
-  let timer;
-  return function () {
-    const context = this;
-    const args = arguments;
-    clearTimeout(timer);
-    timer = setTimeout(function () {
-      fn.apply(context, args);
-    }, timeout);
-  };
-}
-
-// const search = document.getElementById('search-beer');
-// search.addEventListener('input', function (event) {
-//     debouceSearch(searchBeer, 300);
-// });
