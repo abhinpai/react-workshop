@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import HotstarThumbnail from './assets/media/images/hotstar/hotstar.png';
+import SnakeGame from './assets/media/images/snake-game/snake.png';
 import './app.scss';
 
 const applications = [
@@ -10,12 +11,12 @@ const applications = [
     description: '',
     link: '/hotstar',
   },
-  // {
-  //   name: 'Netflix Clone',
-  //   image: HotstarThumbnail,
-  //   description: '',
-  //   link: '/netflix',
-  // },
+  {
+    name: 'Snake Game',
+    image: SnakeGame,
+    description: '',
+    link: '/snakegame',
+  },
   // {
   //   name: 'Twitter Clone',
   //   image: HotstarThumbnail,

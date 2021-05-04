@@ -1,17 +1,17 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './styles/style.scss';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Constansts = {
   LEFT: 37,
   TOP: 38,
   RIGHT: 39,
   BOTTOM: 40,
-  TOTAL_PIXELS: 50,
-  SQURE_OF_PIXELS: Math.pow(50, 2),
+  TOTAL_PIXELS: 40,
+  SQURE_OF_PIXELS: Math.pow(40, 2),
 };
 
 const defaultState = {
-  score: 0,
   snakeLength: 1000,
   foodPosition: 1,
   pixelList: [],
@@ -20,7 +20,10 @@ const defaultState = {
 };
 
 const SnakeGame = () => {
+  let movementInterval = null;
   const [gameState, setGameState] = useState(defaultState);
+  let [score, setScore] = useState(0);
+  const [inteval, setMovementInterval] = useState(null);
 
   // Method to construct the food pixel
   const constructFood = () => {
@@ -86,6 +89,13 @@ const SnakeGame = () => {
 
     let snakeNextHeadPosition =
       gameState.pixelList[gameState.snakeHeadPosition];
+
+    // Kill the snake if it eat byitseld
+    if (snakeNextHeadPosition.classList.contains('snakeBodyPixel')) {
+      clearInterval(inteval);
+      if (!alert(`Your Score ${score}.`)) resetGame();
+    }
+
     snakeNextHeadPosition.classList.add('snakeBodyPixel');
 
     // Remove the snake pixel time once it reaches to the end of the length
@@ -96,11 +106,19 @@ const SnakeGame = () => {
 
     // Re-create tht food if snake eats it and update the score
     if (gameState.foodPosition === gameState.snakeHeadPosition) {
-      gameState.score = gameState.score++;
+      setScore(++score);
       gameState.snakeLength = gameState.snakeLength + 100;
       setGameState(gameState);
       constructFood();
     }
+  };
+
+  const resetGame = () => {
+    setGameState(defaultState);
+    getPixels();
+    constructFood();
+    setScore(0);
+    // setMovementInterval(setInterval(moveSnake, 80));
   };
 
   // Method to get all the constructed pixels
@@ -153,11 +171,29 @@ const SnakeGame = () => {
     constructGamePixels();
     getPixels();
     constructFood();
-    setInterval(moveSnake, 80);
+    setMovementInterval(setInterval(moveSnake, 80));
   }, []);
 
   return (
     <main>
+      <div className='score'>
+        <div>
+          <AnimatePresence>
+            <motion.h1
+              key={score}
+              initial={{ y: -40, opacity: 0.5, scale: 0.3 }}
+              animate={{ y: 1, opacity: 1, scale: 1 }}
+              exit={{ y: 40, opacity: 0.5, scale: 0.2 }}
+              transition={{ duration: 0.5 }}
+              className='score-head'
+              style={{ position: 'absolute' }}
+            >
+              {score}
+            </motion.h1>
+          </AnimatePresence>
+        </div>
+      </div>
+      {/* <button onClick={() => setScore(++score)}>Increase</button> */}
       <div id='gameContainer' className='game-board'></div>
     </main>
   );
