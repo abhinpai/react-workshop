@@ -1,5 +1,4 @@
 import React from 'react';
-import MovieContent from '../../assets/data/hotstartMovie.json';
 import '../styles/banner.scss';
 
 const Content = {

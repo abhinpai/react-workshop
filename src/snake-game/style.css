@@ -4,8 +4,8 @@ body {
 }
 
 .game-board {
-  width: 40vw;
-  height: 40vw;
+  width: 50vw;
+  height: 50vw;
   margin: 2vw auto;
   background-color: #0c1021;
   border: solid 10px slategrey;
@@ -17,6 +17,7 @@ body {
   height: 1vw;
   border-radius: 10px;
   float: left;
+  background-color: re;
 }
 
 .food {

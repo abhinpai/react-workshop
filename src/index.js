@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 const App = lazy(() => import('./app'));
 const Hotstar = lazy(() => import('./hotstar/Hotstar'));
 const Netflix = lazy(() => import('./netflix/Netflix'));
+const SnakeGame = lazy(() => import('./snake-game-react/SnakeGame'));
 
 ReactDOM.render(
   <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.render(
           <Route path='/home' component={App} />
           <Route path='/netflix' component={Netflix} />
           <Route path='/hotstar' component={Hotstar} />
+          <Route path='/snakegame' component={SnakeGame} />
           <Route exact path='/' component={App} />
         </Switch>
       </Suspense>
