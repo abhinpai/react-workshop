@@ -1,0 +1,48 @@
+body {
+  background-color: #d4d4d4;
+  text-align: center;
+}
+
+.game-board {
+  width: 40vw;
+  height: 40vw;
+  margin: 2vw auto;
+  background-color: #0c1021;
+  border: solid 10px slategrey;
+  border-radius: 10px;
+}
+
+.game-board-pixel {
+  width: 1vw;
+  height: 1vw;
+  border-radius: 10px;
+  float: left;
+}
+
+.food {
+  background-color: orange;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.snakeBodyPixel {
+  background-color: #fd6401;
+  box-shadow: 0 0 5px #fd6401;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(240, 171, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(240, 171, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(240, 171, 0, 0);
+  }
+}
